@@ -1,0 +1,16 @@
+from random import randint
+los = randint(1,10)
+odp = -1
+i = 0
+
+print("Guess the number from the range from 1 to 10")
+
+while odp != los:
+    i += 1
+    odp = int(input("Give me a number: "))
+    if odp > los:
+        print("The indicated number is greater than the number to be guessed! Try again.")
+    elif odp < los:
+        print("The indicated number is lower than the number to be guessed! Try again.")
+
+print("Congratulations! You needed: ", i, "attempts to guess the number.")
